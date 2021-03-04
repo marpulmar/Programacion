@@ -36,3 +36,28 @@ function ejercicio17() {
     document.write (numero," por ",i," son ",multiplicacion,"<br>")
     }
 }
+
+//Ejercicio 21//
+function contar_hasta_25 () {
+    var numero = (prompt("Antes tienes que introducir un numero entero del 1 al 5"))
+    while (numero<1 || numero>5) {
+        alert ("Eso no es un numero entre 1 y 5, ¡prueba de nuevo!")
+       numero = (prompt( "Introduce un numero entre 1 y 5"))
+    }
+    for (i=1; i<=25; i++) {
+        document.write (i, "<br>")
+    }
+}
+
+//Ejercicio 22//
+function potencias() {
+    var numero = (prompt("Hola, ¿podrías introducir un numero del 10 al 20?"))
+    while (numero<10 || numero>20) {
+        alert ("¡Eso no es un numero del 10 al 20! Vuelve a probar")
+        numero = (prompt("Introduce un numeo del 10 al 20"))
+    }
+    for (i=1; i<=100; i++) {
+        var cuadrado = i**2
+        document.write ("El cuadrado de ",i," es ",cuadrado,"<br>")
+    }
+}

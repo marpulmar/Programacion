@@ -26,3 +26,12 @@ function preguntar_nota() {
         alert ("¡Enhorabuena, tienes un sobresaliente!")
     }
 }
+
+//Ejemplo 3//
+function Contar() {
+    for (i=1; i<=10; i++)
+    {
+        document.write (i,"<br>")
+    }
+}
+

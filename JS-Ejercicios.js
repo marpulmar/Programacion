@@ -1,8 +1,80 @@
 //Ejercicio 1//
 function pasar_de_p_a_cm () {
-     var p_a_cm = (prompt("¿Podrías decirme unn numero en pulgadas?"))
+     var p_a_cm = (prompt("¿Podrías decirme un numero en pulgadas?"))
      var C = (p_a_cm)*2.54
      document.write (p_a_cm," pulgadas son ",C," centímetros.")
+}
+
+//Ejercicio 2//
+function pasar_de_f_a_c() {
+    var grados_f = (prompt("Por favor, introduce una medida que quieras convertir."))
+    var grados_c = (grados_f-32)*5/9
+    document.write (grados_f," grados Fahrenheit son ",grados_c," grados centígrados.")
+}
+
+//Ejercicio 3//
+function dol_a_eur() {
+    var dolares = (prompt("Por favor, introduce una cantidad en dólares."))
+    var euros = dolares*0.891
+    document.write (dolares," $ son ",euros," €.")
+}
+
+//Ejercicio 4//
+function calcular() {
+    var horas = (prompt("¿Cuántas horas has trabajado?"))
+    var tarifa = (prompt("¿Cuál es la tarifa por hora?"))
+    var salario = horas*tarifa
+    document.write ("Número de horas: ", horas,".<br>Tarifa por hora: ",tarifa,"€.<br>Salario: ",salario,"€.")
+
+}
+
+//Ejercicio 5//
+function calculo_capital() {
+    var cap_inicial =(prompt("¿Cuál es el capital inicial?"))
+    var tasa_interes =(prompt("¿Cuál es la tasa de interés?"))
+    var tiempo = (prompt("¿A cuántos años se realiza la operación?"))
+    var cap_final = cap_inicial*(1+tasa_interes/100)**tiempo
+    document.write ("Después de ",tiempo," años, un capital inicial de ",cap_inicial,"€ al ",tasa_interes,"% se convierte en ",cap_final,"€.")
+    
+}
+
+//Ejercicio 6//
+function calcular_nota() {
+    var nota = (prompt("¿Qué nota has sacado en el examen?"))
+    while (nota>10){
+        alert ("Por favor, escribe tu nota entre el 1 y el 10")
+        nota= (prompt("Introduce la nota de tu examen"))
+    }
+    if (nota<5) {
+        alert ("¡Vaya! Has suspendido.")
+    }
+    else if(nota>=5 && nota<7) {
+        alert ("¡Qué bien! Has aprobado.")
+    }
+    else if(nota>=7 && nota<9) {
+        alert ("¡Enhorabuena! Tienes un notable.")
+    }
+    else if (nota>=9 && nota==10) {
+        alert ("¡Tienes un sobresaliente!")
+    }
+}
+
+//Ejercicio 7//
+function pedir_numero() {
+    var numero = (prompt("¿Podrías escribir un número? También puedes escribir un número negativo"))
+    if (numero<0) {
+        var valor_absoluto = -1*numero
+        document.write ("El valor absoluto de ",numero," es ",valor_absoluto)
+    }
+    else {
+        document.write ("El valor absoluto de ",numero," es ",numero)
+    }
+}
+
+//Ejercicio 8// 
+function preguntar_numeros_divisibles () {
+    var numero = (prompt("Escriba un número entero positivo:"))
+    if (numero)
 }
 
 //Ejercicio 14//
@@ -37,6 +109,17 @@ function ejercicio17() {
     }
 }
 
+//Ejercicio 18//
+function numeros_divisibles() {
+    var num = num>=1;num<=100
+    if (num++%0/2) {
+        document.write ("El numero ",num,"es par")
+    }
+    else {
+        document.write ("El numero ",num," es impar")
+    }
+}
+
 //Ejercicio 21//
 function contar_hasta_25 () {
     var numero = (prompt("Antes tienes que introducir un numero entero del 1 al 5"))
@@ -61,3 +144,9 @@ function potencias() {
         document.write ("El cuadrado de ",i," es ",cuadrado,"<br>")
     }
 }
+
+//Ejercicio 23//
+
+//Ejercicio 24//
+
+//Ejercicio 25//

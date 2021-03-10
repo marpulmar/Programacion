@@ -74,11 +74,34 @@ function pedir_numero() {
 //Ejercicio 8// 
 function preguntar_numeros_divisibles () {
     var numero = (prompt("Escriba un número entero positivo:"))
-    if (numero)
+    if (numero%2==0){
+        document.write ("El número ",numero," es divisible entre 2.<br>")
+    }
+    if (numero%3==0) {
+        document.write ("El número ",numero," es divisible entre 3.<br>")
+    }
+    if (numero%5==0){
+        document.write ("El número ",numero," es divisible entre 5.<br>")
+    }
+    if (numero%7==0) {
+        document.write ("El número ",numero," es divisible entre 7.<br>")
+    }
+    if (numero%11==0) {
+        document.write ("El número ",numero, " es divisble entre 11.<br>")
+    }
+    if (numero%13==0) {
+        document.write ("El número ",numero, " es divisible entre 13.<br>")
+    }
+    if (numero%17==0) {
+        document.write ("El número ",numero, " es divisible entre 17.<br>")
+    }
+    if (numero%19==0) {
+        document.write ("El número ",numero," es divisible entre 19.<br>")
+    }
 }
 
 //Ejercicio 14//
-function contar_de_uno_a_seiscinco() {
+function contar_de_uno_a_doscinco() {
     for (i=1; i<=25; i++) {
         document.write (i,"<br>")
     }
@@ -111,24 +134,22 @@ function ejercicio17() {
 
 //Ejercicio 18//
 function numeros_divisibles() {
-    var num = num>=1;num<=100
-    if (num++%0/2) {
-        document.write ("El numero ",num,"es par")
-    }
-    else {
-        document.write ("El numero ",num," es impar")
+    for (num=1; num<=100; num++) {
+        if (num%2!=0){
+            document.write ("El número ",num," es impar")
+        }
+        else {
+            document.write ("El número ",num," es par")
+        }
+
     }
 }
-
 //Ejercicio 21//
 function contar_hasta_25 () {
-    var numero = (prompt("Antes tienes que introducir un numero entero del 1 al 5"))
-    while (numero<1 || numero>5) {
-        alert ("Eso no es un numero entre 1 y 5, ¡prueba de nuevo!")
-       numero = (prompt( "Introduce un numero entre 1 y 5"))
-    }
-    for (i=1; i<=25; i++) {
-        document.write (i, "<br>")
+    var numero = 1 
+    while (numero<=25) {
+        document.write (numero,"<br>")
+        numero++
     }
 }
 

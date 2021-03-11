@@ -100,6 +100,16 @@ function preguntar_numeros_divisibles () {
     }
 }
 
+//Ejercicio 11//
+function pasar_de_p_m() {
+    var pies= prompt("Introduzca una medida en pies.")
+    document.write (pies," pies son ",pies/3.281," metros.")
+}
+function pasar_de_m_p() {
+    var metros= prompt("Introduzca una medida en metros.")
+    document.write (metros," metros son ",metros*3.281," pies.")
+}
+
 //Ejercicio 14//
 function contar_de_uno_a_doscinco() {
     for (i=1; i<=25; i++) {
@@ -134,16 +144,34 @@ function ejercicio17() {
 
 //Ejercicio 18//
 function numeros_divisibles() {
-    for (num=1; num<=100; num++) {
-        if (num%2!=0){
-            document.write ("El número ",num," es impar")
-        }
-        else {
-            document.write ("El número ",num," es par")
-        }
+   for  (num=1;num<=100;num++) {
+    if (num%2==0) {
+        document.write ("El numero ",num," es par.<br>")
+    }
+    else {
+        document.write ("El numero ",num," es impar.<br>")
+    }
+   }
+}
 
+//Ejercicio 19//
+function multiplos_de_diez () {
+    for (i=50;i<=150;i++){
+        if (i%10==0){
+            document.write (i,"<br>")
+        }
     }
 }
+
+//Ejercicios 20//
+function contar_en_negativo (){
+    i=-20
+    while (i<=0) {
+        document.write (i,"<br>")
+        i= i+5
+    }
+}
+
 //Ejercicio 21//
 function contar_hasta_25 () {
     var numero = 1 

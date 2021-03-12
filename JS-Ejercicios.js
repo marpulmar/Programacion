@@ -77,28 +77,28 @@ function preguntar_numeros_divisibles () {
     if (numero%2==0){
         document.write ("El número ",numero," es divisible entre 2.<br>")
     }
-    if (numero%3==0) {
+    else if (numero%3==0) {
         document.write ("El número ",numero," es divisible entre 3.<br>")
     }
-    if (numero%5==0){
+    else if (numero%5==0){
         document.write ("El número ",numero," es divisible entre 5.<br>")
     }
-    if (numero%7==0) {
+    else if (numero%7==0) {
         document.write ("El número ",numero," es divisible entre 7.<br>")
     }
-    if (numero%11==0) {
+    else if (numero%11==0) {
         document.write ("El número ",numero, " es divisble entre 11.<br>")
     }
-    if (numero%13==0) {
+    else if (numero%13==0) {
         document.write ("El número ",numero, " es divisible entre 13.<br>")
     }
-    if (numero%17==0) {
+    else if (numero%17==0) {
         document.write ("El número ",numero, " es divisible entre 17.<br>")
     }
-    if (numero%19==0) {
+    else if (numero%19==0) {
         document.write ("El número ",numero," es divisible entre 19.<br>")
     }
-}
+}//TAMBIÉN SE PUEDE RESOLVER CON UN SWITCH//
 
 //Ejercicio 11//
 function pasar_de_p_m() {
@@ -108,6 +108,58 @@ function pasar_de_p_m() {
 function pasar_de_m_p() {
     var metros= prompt("Introduzca una medida en metros.")
     document.write (metros," metros son ",metros*3.281," pies.")
+}
+
+//Ejercicio 12//
+function horoscopo_chino(){
+    var año = prompt("¿Cuál es tu año de nacimiento?")
+    switch (año%12) {
+        case 4:
+            alert ("Según el calendario lunar chino, tu signo del zodiaco es la rata.");
+            break
+        case 5:
+            alert ("Segun el calendario lunar chino, tu signo del zodiaco es el buey.");
+            break
+        case 6:
+            alert ("Según el calendario lunar chino, tu signo del zodiaco es el tigre.");
+            break
+        case 7:
+            alert ("Según el calendario lunar chino, tu signo del zodiaco es el conejo.");
+            break
+        case 8:
+            alert ("Según el calendario lunar chino, tu signo del zodiaco es el dragón.");
+            break
+        case 9:
+            alert ("Según el calendario lunar chino, tu signo del zodiaco es la serpiente.");
+            break
+        case 10:
+            alert ("Según el calendario lunar chino, tu signo del zodiaco esel caballo.");
+            break
+        case 11:
+            alert ("Según el calendario lunar chino, tu signo del zodiaco es la cabra.");
+            break
+        case 12:
+            alert ("Según el calendario lunar chino, tu signo del zodiaco es el mono.");
+            break
+        case 13:
+            alert ("Según el calendario lunar chino, tu signo del zodiaco es el gallo.");
+            break
+        case 14:
+            alert ("Según el calendario lunar chino, tu signo del zodiaco es perro.");
+            break
+        case 15:
+            alert ("Según el calendario lunar chino, tu signo del zodiaco es cerdo.");
+            break
+    }
+}
+
+//Ejercicio 13//
+function horoscopo() {
+    var mes = prompt("¿En qué mes naciste?")
+    var año= prompt("¿En qué año naciste?")
+    switch (año){
+
+    }
 }
 
 //Ejercicio 14//
@@ -195,6 +247,7 @@ function potencias() {
 }
 
 //Ejercicio 23//
+//Var= mathfloor..... while() porque se va a repetir varias veces//
 
 //Ejercicio 24//
 

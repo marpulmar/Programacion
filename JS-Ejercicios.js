@@ -349,16 +349,49 @@ function lanzo_dado() {
 
 //Ejercicio 25//
 function adivina() {
-var numero = Math.floor((Math.random() * 10) + 1)
-var preguntar = prompt("Introduce un número del 1 al 10")
-if (numero==preguntar) {
-    alert ("¡Has acertado, el número en el que estaba pensando era el ",numero,"!")
-}
-else {
-    alert ("¡Oh vaya, no has acertado! El número en el que esaba pensando era el ",numero)
-}
+    var numero = Math.floor((Math.random() * 10) + 1)
+    var preguntar = (prompt("Introduce un número del 1 al 10"))
+    while (numero != preguntar) {
+        preguntar = (prompt("Oh vaya, no has acertado. Prueba de nuevo"))
+    }
+    if (numero == preguntar) {
+        document.write("¡Has acertado! el número era el ", numero)
+    }
 }
 
 //Ejercicio 26//
+function adivinados() {
+    var numero = Math.floor((Math.random() * 100) + 1)
+    var preguntar = (prompt("Adivina, ¿En qué número del 1 al 100 estoy pensando?"))
+    while (numero != preguntar) {
+        if (numero > preguntar) {
+            preguntar = (prompt("Lo siento, prueba con otro número mayor."))
+        }
+        if (numero < preguntar) {
+            preguntar = (prompt("Lo siento, prueba con otro número menor."))
+        }
+    }
+    if (numero == preguntar) {
+        document.write("¡Has acertado! El número era el ", numero, ".")
+    }
+}
 
-
+//Ejercicio 27//
+function adivinatres() {
+    var numero = Math.floor((Math.random() * 100) + 1)
+    var preguntar = (prompt("Adivina, ¿En qué número del 1 al 100 estoy pensando?"))
+    while (numero != preguntar) {
+        if (tiros== 5) {
+            document.write ("Has gastado tus intentos")
+        }
+        if (numero > preguntar) {
+            preguntar = (prompt("Lo siento, prueba con otro número mayor."))
+        }
+        if (numero < preguntar) {
+            preguntar = (prompt("Lo siento, prueba con otro número menor."))
+        }
+    }
+    if (numero == preguntar) {
+        document.write("¡Has acertado! El número era el ", numero, ".")
+    }
+}
